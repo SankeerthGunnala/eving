@@ -15,18 +15,12 @@ var movies = [
         "lang":"Hindi"
     }
 ]
+undefined
 typeof(movies)
 "object"
 movies[0].name
 "Mad Max"
-movies[1].name
-"Avenger"
-movies[2].rating
-4.8
-movies[0].lang
-"Eng"
-movies[2].name
-"Jab We Met"
+
 
 var movies = [
     {
@@ -45,30 +39,20 @@ var movies = [
         "lang":"Hindi"
     }
 ]
+
 movies.map((data) => {
-    return data.rating
-}
-)
-(3) [3.4, 4.3, 4.8]
-movies.map((data) => {
-    return data.lang
-}
-)
-(3) ["Eng", "Eng", "Hindi"]
-movies.map((data) => {
-    return data.name
-}
-)
-(3) ["Mad Max", "Avenger", "Jab We Met"]
+  return data.name
+})
+
+["Mad Max", "Avenger", "Jab We Met"]
+
 
 var movie =  {
     "name":"Mad Max",
     "rating":3.4,
     "lang":"Eng"
 }
-for(a in movie){
+
+for(a in movies){
     console.log(a)
 }
-name
-rating
-lang

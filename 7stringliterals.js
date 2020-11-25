@@ -22,3 +22,5 @@ var series = "webseries"
 var type = "Thriller"
 var rating = 8.1
 var out = `The ${name} is an ${series} of ${type} with ${rating} in Amazon prime.` 
+
+
