@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <!-- For DataTables -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+        <h1>Data Table</h1>
+        <div class="container">
+
+            <table id="mytable" class="table table-bordered table-hover">
+                <thead class="thead-dark" style="text-align: center">
+                    <tr>
+                        <th>City Name</th>
+                        <th>Country Name</th>
+                    </tr>
+                </thead>
+                <tbody id="tabledata">
+                    <tr class="table-success" style="text-align: center">
+                        <td>Amsterdam</td>
+                        <td>Nertherlands</td>
+                    </tr>
+                    <tr class="table-info" style="text-align: center">
+                        <td>Delhi</td>
+                        <td>India</td>
+                    </tr>
+                    <tr class="table-warning" style="text-align: center">
+                        <td>London</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr class="table-primary" style="text-align: center">
+                        <td>Texas</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr class="table-danger" style="text-align: center">
+                        <td>Paris</td>
+                        <td>France</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#mytable').DataTable()
+            })
+        </script>
+    </body>
+</html>
