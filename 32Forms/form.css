@@ -1,0 +1,19 @@
+body{
+    background-color: beige;
+}
+
+p{
+    color:red
+}
+h3{
+    color: cadetblue;
+}
+#ppout{
+    height:10px;
+    width:100%;
+    visibility: hidden;
+}
+
+span{
+    color:green
+}
